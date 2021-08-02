@@ -1,0 +1,201 @@
+body
+{
+background-color: #cddafd;
+width: 100vw;
+}
+nav {
+  background-color: red;
+  height: 100px;
+}
+ul,
+.nav-items {
+  padding-top: 5px;
+  font-size: 25px;
+  font-family: "Kaushan Script", cursive;
+  margin-right: 50px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  float: right;
+  text-decoration: none;
+}
+.brand {
+  font-family: "Kaushan Script", cursive;
+  margin-left: 90px;
+  margin-top: 20px;
+  font-size: 70px;
+  text-decoration: none;
+  color:#ffc300;
+}
+a {
+  padding: 10px;
+}
+a:hover {
+  border: 1px solid black;
+}
+/* cards */
+.flex-container
+ {
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+  justify-content: space-evenly;
+  margin: 10px auto;
+  background-color: #e2afff;
+
+}
+.card-body {
+  /* flex-flow: row wrap; */
+  margin: 5px;
+  height: 450px;
+  border: 1px solid black;
+  background-color:#f3c4fb;
+
+  text-align: center;
+}
+img {
+  height: 300px;
+padding: 15px;
+  /* border:1px solid black; */
+}
+.card-body:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.card-footer {
+  font-size: 20px;
+  text-align: center;
+  padding: 2px;
+text-overflow: none;
+}
+.card-heading
+{
+/* background-color:#ff4c68; */
+text-align: center;
+  transition:2secs;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+.card-heading:hover
+{
+animation-name: split;
+animation-duration:20sec;
+transform: scale(1.15);
+}
+@keyframes split 
+{
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+/* FOOTER */
+#footer
+{
+    text-align: center;
+    padding: 30px;
+    background-color:#abc4ff; 
+}
+.iccon
+{
+     margin:1%;
+}
+/* slider */
+h1 {
+  font-size: 2.4rem;
+  text-align: center;
+  color: #f55c47;
+  line-height: 1rem;
+  letter-spacing: 1px;
+  
+  /* margin: 50px; */
+}
+h1:hover{
+/* box-shadow: 2px 2px 4px 4px black; */
+text-shadow: 2px;
+transform:scale(1.10);
+cursor: pointer;
+}
+.slider {
+  height: 620px;
+  animation: slider 10s infinite linear;
+  width:100vw;
+  /* margin-top: 60px; */
+  padding:10px;
+  box-shadow: 2px 2px 10px 10px rgb(252, 249, 249);
+}
+/* img {
+  width: 700px;
+  margin-left: 365px;
+  margin-bottom: 500px;
+  margin-top: 60px;
+  box-shadow: 2px 2px 10px 10px rgb(252, 249, 249);
+} */
+@keyframes slider {
+  0% {
+    background-image: url("https://images.unsplash.com/photo-1543339308-43e59d6b73a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  }
+  35% {
+    background-image: url("https://images.unsplash.com/photo-1543353071-873f17a7a088?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80");
+  }
+  75% {
+    background-image: url("https://images.unsplash.com/photo-1432139555190-58524dae6a55?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGZvb2R8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
+  }
+   100% {
+    background-image: url("https://images.unsplash.com/photo-1613082487279-1e16f1e81505?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80");
+  } 
+}
+/* form */
+form
+{
+width:100vw;
+padding: 0.5em 0.5em 0.5em;
+border: 1px solid black;
+height: 350px;
+width: 1100px;
+margin-left: 230px;
+margin-bottom: 100px;
+margin-top: 100px;
+box-shadow: 2px 2px 10px 10px rgb(252, 249, 249);
+background-color:#5e60ce;
+
+
+
+/* float:center; */
+}
+.form-img
+{
+    float:left;
+    /* border-right: 3px solid black; */
+    border: 2px black solid black;
+    margin-top:20px;
+    
+}
+.form-items
+{
+  float: right;
+    text-align: center;
+    height: 20px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 80px;
+    
+}
+.lable
+{
+    size: 32px;
+    text-align: center;
+    font-stretch: 5px;
+}
+.form-control
+{
+ padding:10px;
+ background-color: :transparent;
+}
+.btn
+{
+    margin: 20px;
+    padding: 5px;
+    background-color: blue;
+    font-size:20px;
+
+}

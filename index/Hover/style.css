@@ -1,0 +1,27 @@
+body
+{   
+    background-color:black;
+}
+.text
+{
+    color:yellow;
+}
+.box
+{
+    text-align:center;
+    border: 2px solid yellow;
+    height:40px;
+    width:130px;
+    padding-bottom:22px;
+    margin: 350px 350px;
+    transition:0.5s;
+    
+}
+.box:hover
+{
+    box-shadow: 0 10px 6px -6px yellow;
+}
+.text:hover
+{
+    color:white;
+}
