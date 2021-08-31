@@ -1,189 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Time Table</title>
-    <style>
-    table 
-    {
-        background-color:#FDF6F0;
-        margin-left: 240px;
-    margin-right: 200px;
-    margin-top: 50px;
-    }
-    tfoot
-    {
-      text-align:center;
-    }
-    h1
-    {
-        font-style:oblique;
-        text-align:center;
-        color:blue;
-    }
-    td
-    {
-        color:black;
-    }
-    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div>
-    <h1>This is Time Table</h1>
-    <table border="10" height="400px" width="900px">
-        <thead>
-            <tr>
-        
-                <th>Days / Periods</th>
-                <th>1</th>
-                <th>2</th>
-                <th>3</th>
-                <th></th>
-                <th>4</th>
-                <th>5</th>
-                <th>6</th>
-            </tr>
-        </thead>
+        <div class="main">
+              <h1>Todo List</h1>
+            <div  id="input">
+<input type="text" placeholder="Type here..." id="input_text" autocomplete="off" required>
+<button type="button" id="btn"><i class="far fa-paper-plane"></i></button>
+<select name="todos" class="filter-todo" id="btn1">
+    <option value="all">All</option>
+    <option value="completed">completed</option>
+    <option value="remaining">remaining</option>
+</select>
+            </div>
+            <div id="content">
 
-        <tbody>
-            <tr>
-                <td>Monday</td>
-                <td>Science</td>
-                <td>Maths</td>
-                <td>English</td>
-                <td rowspan="6"> BREAK </td>
-                <td>Maths</td>
-                <td rowspan="6">Games</td>
-                <td>English</td>
-            </tr>
-            <tr>
-                <td>Tuesday</td>
-                <td>Maths</td>
-                <td>Maths</td>
-                <td>Science</td>
-
-                <td>Maths</td>
-
-                <td>Hindi</td>
-            </tr>
-            <tr>
-                <td>Wednesday</td>
-                <td>Maths</td>
-                <td>Hindi</td>
-                <td>English</td>
-
-                <td>Moral Science</td>
-
-                <td>English</td>
-            </tr>
-            <tr>
-                <td>Thursday</td>
-                <td>Science</td>
-                <td>Hindi</td>
-                <td>English</td>
-
-                <td>Maths</td>
-
-                <td>FREE</td>
-            </tr>
-            <tr>
-                <td>Friday</td>
-                <td>Hindi</td>
-
-                <td>Maths</td>
-                <td>Science</td>
-
-                <td>Maths</td>
-
-                <td>English</td>
-            </tr>
-            <tr>
-                <td>Saturday</td>
-                <td>Science</td>
-                <td>Maths</td>
-                <td>Hindi</td>
-
-                <td>Maths</td>
-
-                <td>Moral Science</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="8">ENJOY</td>
-            </tr>
-        </tfoot>
-    </table>
-    </div>
-
-
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <h2>My Bio Data</h2>
-    <form>
-        
-        <fieldset>
-            <legend>Personal Information</legend>
-        FirstName:
-        <input type="text" placeholder="first name" name="first">
-        LastName:
-        <input type="text" placeholder="last name" name="last">
-        <br>
-        <br>
-        Male:
-        <input type="radio" name="male">
-        Female:
-        <input type="radio" name="female">
-        Other:
-        <input type="radio" name="other">
-        <br>
-        <br>
-        Date of birth:
-        <input type="date" name:birth>
-        <br>
-        <br>
-        Phone
-        <input type="number" placeholder="+91">
-        <br>
-        <br>
-        Height
-        <input type="height" placeholder="Height in feet">
-        </fieldset>
-        
-    <div>
-        <fieldset>
-            <legend>Education</legend>
-        School Name:
-        <input type="text" placeholder="School Name">
-        <br>
-        <br>
-        Class:
-        <input type="text" placeholder="Enter class">
-        <br>
-        <br>
-        Stream:
-        <select name="stream" id="stream">
-            <option value="BTECH">BTECH</option>
-            <option value="MTECH">MTECH</option>
-            <option value="BBA">BBA</option>
-            <option value="BCA">BCA</option>
-          </select>
-          <br>
-          <br>
-        Marksheet:
-        <input type="file" >
-    </div>
-</fieldset>
-    <br>
-    
-    <input type="Submit" value="Submit">
+            </div>
+        </div>
+    <script src="app.js"></script>
 </body>
-
 </html>
